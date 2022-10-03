@@ -2,6 +2,7 @@ import requests
 import json
 import os
 
+"""
 # 配置开始 
 user = os.environ["USER"]
 account = user.split( )[0] # 账号
@@ -25,6 +26,7 @@ print(response.json()["data"])
 
 SCKEY=os.environ["SCKEY"]
 if len(SCKEY) >= 1:
+"""
   url = 'https://sctapi.ftqq.com/'+SCKEY+'.send'
  requests.post(url, data={"title": "习讯云签到提醒", "desp": "1234"})
 #requests.post(url, data={"title": "习讯云签到提醒", "desp": response.json()["data"]})
